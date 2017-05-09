@@ -23,6 +23,9 @@
         </div>
     </div>
     <div role="main" id='dvContentG' class="ui-content" style="padding:0px">
+        <div id="dv_splash" style="width: 100%; background-image: url('img/splash.png'); background-repeat:no-repeat; background-size: cover;background-position: center;">
+
+        </div>
     </div>  
 
 
@@ -78,8 +81,7 @@
 <script type="text/javascript">  
 
 function resizer(){
-    $("#bg_login").css('height', $(window).height());
-    $("#dvContentG").css('min-height', $(window).height()-50);
+    $("#dv_splash").css('min-height', $(window).height());
 }  
 </script>
 <script type="text/javascript" src="cordova.js"></script>

@@ -7,7 +7,7 @@
   <preference name="android-minSdkVersion" value="14"/>
   <preference name = "SplashScreenDelay" value = "6000" />
   <preference name = "SplashScreen" value = "screen" />
-  
+
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
   <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
   <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0"/>
@@ -41,18 +41,18 @@
     <icon src="img/appicon.png"  density="xhdpi"/>
     <icon src="img/appicon.png"  density="xxhdpi"/>
     <icon src="img/appicon.png"  density="xxxhdpi"/>
-    <splash src="img/aplash.png"  density="land-ldpi"/>
-    <splash src="img/aplash.png"  density="land-mdpi"/>
-    <splash src="img/aplash.png"  density="land-hdpi"/>
-    <splash src="img/aplash.png"  density="land-xhdpi"/>
-    <splash src="img/aplash.png"  density="land-xxhdpi"/>
-    <splash src="img/aplash.png"  density="land-xxxhdpi"/>
-    <splash src="img/aplash.png"  density="port-ldpi"/>
-    <splash src="img/aplash.png"  density="port-mdpi"/>
-    <splash src="img/aplash.png"  density="port-hdpi"/>
-    <splash src="img/aplash.png"  density="port-xhdpi"/>
-    <splash src="img/aplash.png"  density="port-xxhdpi"/>
-    <splash src="img/aplash.png"  density="port-xxxhdpi"/>
+    <splash src="img/splash.png"  density="land-ldpi"/>
+    <splash src="img/splash.png"  density="land-mdpi"/>
+    <splash src="img/splash.png"  density="land-hdpi"/>
+    <splash src="img/splash.png"  density="land-xhdpi"/>
+    <splash src="img/splash.png"  density="land-xxhdpi"/>
+    <splash src="img/splash.png"  density="land-xxxhdpi"/>
+    <splash src="img/splash.png"  density="port-ldpi"/>
+    <splash src="img/splash.png"  density="port-mdpi"/>
+    <splash src="img/splash.png"  density="port-hdpi"/>
+    <splash src="img/splash.png"  density="port-xhdpi"/>
+    <splash src="img/splash.png"  density="port-xxhdpi"/>
+    <splash src="img/splash.png"  density="port-xxxhdpi"/>
   </platform>
   <platform name="ios">
     <icon src="www/res/icon/ios/icon.png" platform="ios" width="57" height="57"/>

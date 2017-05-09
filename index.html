@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title></title>
+
+<link rel="stylesheet" href="css/css_main.css" />
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> -->
+<link rel="stylesheet" href="css/gears.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+<link rel="stylesheet" href="css/xpull.css"/>
+
+</head>
+<body onload="resizer()">
+<div data-role="page" data-theme="c">
+ 
+    <div data-role="header" id="dvHead">
+        <div class="ui-grid-a">
+            <a href="#dvMenu" id="btnM" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon" style="border:none; margin-right:6px; margin-left:6px"></a>
+            <span id="dvtitle">-</span>
+            <a href="#dvMenuConfig" id="btnM" style="float:right; border:none; margin-right:6px;" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon" ></a>
+        </div>
+    </div>
+    <div role="main" id='dvContentG' class="ui-content" style="padding:0px">
+    </div>  
+
+
+    <!-- Menu Lateral -->
+    <div data-role="panel" id="dvMenu" data-theme="b">
+        <ul data-role="listview">
+            <li data-icon="false">
+                <a href="#" style="width:70%" onclick="switchMenu(1, 'Sales Operation-BOC',0,0)"><h3>Home</h3></a>
+                <a href="#" style="width:15%; margin:1px; height:40px; float:right; border:0px; align:right" class="ui-btn ui-icon-delete ui-icon-notext" data-rel="close" data-target="#dvMenu"></a>
+            </li>
+            <li data-icon="false"><a href="#" class="ui-btn ui-icon-heart ui-btn-icon-left" onclick="switchMenu(5, 'KPIs Favorites',0,0)">My Favorite</a></li>
+            <li data-icon="false"><a href="#" class="ui-btn ui-icon-tag ui-btn-icon-left" onclick="switchMenu(4, 'KPIs by SubChannel',0,0)">KPIs by SubChannel</a></li>
+            <li data-icon="false"><a href="#" class="ui-btn ui-icon-location ui-btn-icon-left" onclick="switchMenu(7, 'KPIs by Zones',0,0)">KPIs by Zones</a></li>
+            <!--<li data-role="collapsible" data-iconpos="right" data-inset="false" data-shadow="false">
+                <h2>Star</h2>
+                <ul data-role="listview">
+                    <li><a href="#">Grs DTH Pos</a></li>
+                </ul>
+            </li>-->
+        </ul>
+    </div>
+    <!-- Fin Menu -->
+
+    <!-- Menu Lateral -->
+    <div data-role="panel" data-position="right" id="dvMenuConfig" data-theme="d">
+        <ul data-role="listview">
+            <li data-icon="false">
+                <a href="#" style="float:left; width:85%; text-align:left"><h3>Control Panel</h3></a>
+                <a href="#" style="width:15%; margin:1px; height:40px; border:0px;" class="ui-btn ui-icon-delete ui-icon-notext" data-rel="close" data-target="#dvMenuConfig"></a>
+            </li>
+            <li data-icon="false"><a href="#" onclick="switchMenu(3, 'Configs',0,0)" class="ui-btn ui-icon-edit ui-btn-icon-right"><center>Configs</center></a></li>
+            <li data-icon="false"><a href="#" onclick="switchMenu(99, 'KPIs by SubChannel',0,0)" class="ui-btn ui-icon-power ui-btn-icon-right"><center>Close Session</center></a></li>
+            <!--<li data-role="collapsible" data-iconpos="right" data-inset="false" data-shadow="false">
+                <h2>Star</h2>
+                <ul data-role="listview">
+                    <li><a href="#">Grs DTH Pos</a></li>
+                </ul>
+            </li>-->
+        </ul>
+    </div>
+    <!-- fin Menu Configs -->
+    
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<!--<script type="text/javascript" src="js/xpull.js"></script>-->
+<script type="text/javascript" src="js/js_main.js"></script>
+<!--<script type="text/javascript" src="js/toast.js"></script>-->
+<script type="text/javascript">  
+
+function resizer(){
+    $("#bg_login").css('height', $(window).height());
+    $("#dvContentG").css('min-height', $(window).height()-50);
+}  
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+</html>

@@ -22,7 +22,7 @@
             <a href="#dvMenuConfig" id="btnM" style="float:right; border:none; margin-right:6px;" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-nodisc-icon" ></a>
         </div>
     </div>
-    <div role="main" id='dvContentG' class="ui-content" style="padding:0px">
+    <div role="main" id='dvContentG' class="ui-content" style="padding:0px; background-image: url('img/back1.jpg'); background-repeat:no-repeat; background-size: cover; background-position: center;">
         <div id="dv_splash" style="width: 100%; background-image: url('img/splash.png'); background-repeat:no-repeat; background-size: cover;background-position: center;">
 
         </div>
@@ -81,6 +81,7 @@
 <script type="text/javascript">  
 
 function resizer(){
+    $("#dvContentG").css('min-height', $(window).height()-45);
     $("#dv_splash").css('min-height', $(window).height());
 }  
 </script>
